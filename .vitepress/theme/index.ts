@@ -3,6 +3,7 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { h } from 'vue';
 import Sponsors from './components/Sponsors.vue';
+import TeamPage from './components/TeamPage.vue';
 import './style.css';
 
 export default {
@@ -14,5 +15,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('Sponsors', Sponsors);
+    app.component('TeamPage', TeamPage);
   },
 } satisfies Theme;
